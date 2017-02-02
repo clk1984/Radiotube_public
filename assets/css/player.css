@@ -1,0 +1,375 @@
+html{
+    background-color: #c09bef;
+    font-family: 'Poiret One', cursive,bold ;
+    font-weight: 700;
+
+}
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.searchDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+.search{
+    width: 40%;
+     box-shadow:
+   1px 1px 0 rgb(22, 160, 133),
+   2px 2px 0 rgb(22, 160, 133),
+   3px 3px 0 rgb(22, 160, 133),
+   4px 4px 0 rgb(22, 160, 133),
+   5px 5px 0 rgb(22, 160, 133),
+   6px 6px 0 rgb(22, 160, 133),
+   7px 7px 0 rgb(22, 160, 133)
+}
+input[type="text"]{
+        font-family: 'Poiret One', cursive ;
+    }
+.videoline{
+    padding-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.queu{
+    padding-right: 10%;
+    padding-left: 10%;
+    width:100%;
+    overflow-y: scroll;
+    height:420px;
+    margin-bottom: 30px;
+}
+.icon{
+  width: 94%;
+  margin-left:6%;
+  margin-top: 7%;
+}
+.player{
+    border-radius: 20px;
+    margin-left: 5%;
+}
+.islogged{
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+/*https://codepen.io/lawnch/pen/Jbpng?editors=1100#0
+css to dropdown menu*/
+* {margin: 0;padding: 0;outline: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+*:after, *:before { -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+/*article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {  display: block;}
+*/html {font-size: 100%;height: auto !important;height: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
+.clear {display: block; }
+.clear::after {clear: both;content: ".";display: block;height: 1px;visibility: hidden;}
+/*NAV*/
+  header {
+    background: linear-gradient(to left,rgba(54,194,182,0.96) 0,rgba(62,188,207,0.96) 100%);
+    border-radius: 28px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    display: flex;
+    /*position: fixed;*/
+    width: auto;
+    height: auto;
+    z-index: 1000;
+  }
+
+  header > nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+    header > nav > ul > li {
+      flex: 0 1 auto;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      transition: all linear 0.1s;
+    }
+
+      header > nav > ul > li:hover {
+        background: rgba(58,162,173,1);
+      }
+
+      header > nav > ul > li a + div {
+        background: linear-gradient(to bottom,rgba(58,162,173,1) 0,rgba(62,188,207,0.96) 100%);;
+        border-radius: 20 20 40px 40px;
+        box-shadow: 0 3px 1px rgba(0,0,0,.05);
+        display: none;
+        font-size: 1rem;
+        position: absolute;
+        width: 195px;
+      }
+
+        header > nav > ul > li:hover a + div {
+          display: block;
+        }
+
+        header > nav > ul > li a + div > ul {
+          list-style-type: none;
+        }
+
+          header > nav > ul > li a + div > ul > li {
+            margin: 0;
+            padding: 0;
+          }
+
+            header > nav > ul > li a + div > ul > li > a {
+              color: rgba(255,255,255,.9);
+              display: block;
+              font-size: .75rem;
+              letter-spacing: 1.5px;
+              padding: .25rem 1.5rem;
+              text-decoration: none;
+              text-transform: uppercase;
+            }
+
+              header > nav > ul > li a + div > ul > li:hover > a {
+                background-color: rgba(0,0,0,.15);
+              }
+
+      header > nav > ul > li > a {
+        align-items: flex-start;
+        color: #fff;
+        display: flex;
+        font-size: 1rem;
+        font-weight: 200;
+        letter-spacing: 1px;
+        max-width: 130px;
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+        text-shadow: 0 1px 1px rgba(0,0,0,.1);
+        transition: all linear 0.1s;
+      }
+
+        header > nav > ul > li > a > div > span {
+          color: rgba(255,255,255,.75);
+          display: block;
+          font-family: Georgia, "Times New Roman", Times, serif;
+          font-size: .7rem;
+          font-style: italic;
+          line-height: 1rem;
+          max-width: 260px;
+        }
+
+@media (min-width: 990px) {
+  header > nav > ul > li > a {
+    max-width: 500px;
+    font-size: 1rem;
+  line-height: 2rem;
+  }
+
+  header > nav > ul > li > a > div > span {
+    margin: 4px 0 0;
+  }
+}
+
+.tab-content .active{
+    display: inline ;
+}
+.tab-content .hide{
+    display: none;
+}
+/*playlist style*/
+ul >li{
+
+}
+li {
+    list-style-type: none;
+  border-style:solid outset ;
+  border-color:grey;
+  border-width:1px;
+  display:flex;
+  justify-content: space-between;
+}
+.nombre{
+  flex-grow:2
+}
+.play {
+     width:20px;
+  height: :10px;
+  align-self:flex-end;
+  margin-right: 8%;
+  cursor: pointer;
+}
+.deletesong{
+  width:20px;
+  height: :10px;
+  align-self:flex-end;
+  margin-right: 8%;
+  cursor: pointer;
+
+}
+.forward{
+       width:36px;
+  height: :32px;
+  align-self:flex-end;
+  margin-right: 8%;
+  display:flex;
+  align-items: space-between;
+  cursor: pointer;
+
+}
+.like{
+  width:36px;
+  height: :32px;
+  align-self:flex-start;
+  margin-right: 8%;
+  display:flex;
+  align-items: space-between;
+  cursor: pointer;
+
+}
+.likehistory{
+    width:20px;
+  height: :10px;
+  align-self:flex-end;
+  margin-right: 8%;
+    cursor: pointer;
+
+}
+img{  }
+
+.container{
+  background-color: #c09bef;
+  display:table;
+      width: 100%;
+      height: 100%;
+      overflow: scroll;
+
+}
+.Searchheader{
+  width :100%;
+  background-color: #F89494;
+
+}
+.Titulo{
+display:flex;
+justify-content:space-between;
+margin-bottom: : 20%;
+  align-items:center;
+
+}
+.nextsong{
+  background-color: #818BD8;
+
+}
+
+.history{
+    background-color: #818BD8;
+  }
+
+.favoritescontainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ background-color: #818BD8;
+
+}
+#favorites{
+  width:100%;
+}
+.avatar{
+    margin-top:3px;
+    margin-left: 3%;
+    margin-right:11%;
+    border-radius:50%
+}
+.friendsheader{
+  display:flex;
+justify-content:center;
+margin-bottom: : 10%;
+  align-items:center;
+}
+
+
+ul.fallback {display:none;}
+nav ul li:hover ul.fallback {display:block;}
+
+   ul#friends{
+        padding: 0;
+        list-style: none;
+        background: #36c2b6;
+    }
+    ul#friends li{
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+       border-radius: 20%;
+
+    }
+    ul#friends li a{
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+               border-radius: 20%;
+
+    }
+    ul#friends li a:hover{
+        color: #fff;
+        background: #36c2b6;
+    }
+    ul#friends li ul.dropdown{
+        min-width: 100%; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul#friends li:hover ul.dropdown{
+        display: block; /* Display the dropdown */
+    }
+    ul#friends li ul.dropdown li{
+        display: block;
+    }
+    .queusong{
+        width:20px;
+  height: :10px;
+  align-self:flex-end;
+  margin-right: 8%;
+    }
+
+    /* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 )
+                url('https://s-media-cache-ak0.pinimg.com/originals/50/58/3a/50583a1d6b1444e83e9f28b6d0e2f13f.gif')
+                50% 50%
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+
+
